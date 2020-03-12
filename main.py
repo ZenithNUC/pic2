@@ -6,7 +6,7 @@ import preprogress
 import transform
 
 if __name__ == "__main__":
-    path = "data/test.jpg"
+    path = "data/test3.png"
     img = preprogress.read_preprogress(path)
     data = preprogress.strdata_progress(img)
     result = transform.transform_str(data)

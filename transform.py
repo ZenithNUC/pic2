@@ -8,6 +8,6 @@ def transform_str(preprogressed):
     strs_list = np.full((y_max,x_max),".")
     for x in range(x_max):
         for y in range(y_max):
-            num = -int(preprogressed[y][x] / 15.5)
+            num = int(preprogressed[y][x] / 15.5) - 1
             strs_list[y][x] = strs_list_sort[num]
     return strs_list
